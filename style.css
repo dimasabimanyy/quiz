@@ -1,0 +1,145 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+#quiz-container {
+  max-width: 600px;
+  width: 90%;
+  background: #1e293b;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.question {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.options button {
+  padding: 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #4c51bf;
+  color: white;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.options button:hover {
+  background: #5a67d8;
+  transform: translateY(-3px);
+}
+
+.options button:active {
+  transform: translateY(1px);
+}
+
+#score {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+  color: #38b2ac;
+}
+
+#grade {
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f6e05e;
+}
+
+#final-message {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #90cdf4;
+}
+
+#timer {
+  font-weight: bold;
+  color: #f56565;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#result {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#topic-selection {
+  text-align: center;
+}
+
+#topic-selection button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  border: none;
+  background: #4c51bf;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#topic-selection button:hover {
+  background: #5a67d8;
+}
+
+/* Style for the restart button */
+.restart-btn {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+.restart-btn:hover {
+  background: linear-gradient(135deg, #5a67d8, #4c51bf);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.restart-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.restart-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(67, 114, 196, 0.6);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="quiz-container" style="display: none">
+      <div id="question-container">
+        <div id="timer">Time Left: 15</div>
+        <div class="question">Question will appear here.</div>
+        <ul class="options"></ul>
+      </div>
+      <div id="result" style="display: none">
+        <h2>Quiz Completed!</h2>
+        <p id="score">Your Score: 0</p>
+        <p id="grade">Grade: A+</p>
+        <p id="final-message">
+          Amazing job! Keep challenging yourself to learn and grow. 🌟
+        </p>
+        <button id="restart-btn" class="restart-btn">Restart Quiz</button>
+      </div>
+    </div>
+
+    <div id="topic-selection">
+      <h1>Select a Topic</h1>
+      <button id="geography-btn">Geography</button>
+      <button id="history-btn">History</button>
+      <button id="general-btn">General Knowledge</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
